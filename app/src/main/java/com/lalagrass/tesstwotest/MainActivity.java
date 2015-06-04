@@ -190,7 +190,7 @@ public class MainActivity extends Activity {
             String path = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "TessTwoTest";
             tessBaseAPI.setDebug(true);
             tessBaseAPI.init(path, "eng");
-            tessBaseAPI.setVariable(TessBaseAPI.VAR_CHAR_WHITELIST, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
+            //tessBaseAPI.setVariable(TessBaseAPI.VAR_CHAR_WHITELIST, "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
         }
         tessBaseAPI.setImage(bitmap);
         String text = tessBaseAPI.getUTF8Text();
